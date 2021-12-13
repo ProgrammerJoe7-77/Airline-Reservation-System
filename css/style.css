@@ -1,0 +1,435 @@
+/* colors : light blue - #b6d6d2; sea blue - #45a29e; dark blue - #2b4251 */
+body {
+  background: #f5f5f5;
+}
+/* background banner images for individual pages */
+.homeB {
+  background-image: url('../img/home.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+.flightB {
+  background-size: 100% auto;
+  background-image: linear-gradient(to top, #37474f 60%, transparent 90%),
+  url('../img/fly.jpg');
+}
+
+.parkB {
+/* 10px  background-repeat: no-repeat; */
+  background-size: 100% auto;
+  background-image: linear-gradient(to top, #37474f 60%, transparent 90%),
+  url('../img/parking.jpg');
+}
+.summaryB {
+  background-image: url('../img/summary.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 45%;
+  /* background-image: linear-gradient(to top, #f5f5f5 71%, transparent 87.5%),
+  url('../img/parking.jpg'); */
+}
+/* header menu selection */
+header {
+  overflow: hidden;
+  display: block;
+  background: #ffffff;
+  width: 75%;
+  height: 75px;
+  margin: 70px auto;
+  box-shadow: 0 7px 16px -5px rgba(0,0,0,.3);
+}
+
+.styleButton {
+  border-style: double;
+  padding: 15px;
+  font-size: 15px;
+  background-color: lightblue;
+}
+
+.chooseSeatButton {
+  border-style: double;
+  padding: 15px;
+  font-size: 15px;
+  background-color: lightblue;
+}
+
+.cart a {
+  float: right;
+  padding: 0px 10px;
+  padding-top: 5px;
+  color: #37474f;
+  text-transform: uppercase;
+
+}
+.logo a {
+  float: left;
+  padding: 12px 40px;
+  padding-top: 5px;
+  border-right: 1px solid #b4b4b4;
+  color: #37474f;
+  font-family: serif;
+  font-size: 20px;
+}
+nav, nav ul {
+  display: inline-block;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  font-weight: 525;
+
+}
+
+nav ul li {
+  display: inline-block;
+
+}
+
+table, th, td {
+  border: 1px solid black;
+}
+
+nav ul li a {
+  display: block;
+  margin: 12px 0 0 45px;
+  padding-bottom: 12px;
+  color: #37474f;
+  font-size: 12px;
+  font-family: sans-serif;
+}
+
+nav ul li a:hover {border-bottom: 3px solid black;}
+nav ul li.active a {
+  border-bottom: 3px solid black;
+}
+
+h1, a, h2{
+  text-decoration: none;
+  outline: none;
+  transition: all .25s ease-in-out;
+  color: #37474f;
+}
+
+/* styling for main pages content area: parking, flights, home, lots */
+.parking {
+  display: block;
+  width: 85%;
+  height: 400px;
+  margin: 390px auto;
+  margin-bottom: 100px;
+  box-shadow: 0 7px 16px -2px rgba(0,0,0,.3);
+  background-color: #f5f5f5;
+  border-radius: 10px 10px 10px 10px;
+  padding: 40px 80px;
+}
+.flights {
+  font-family: sans-serif;
+  color: #37474f;
+  display: block;
+  width: 90%;
+  margin: 390px auto;
+  margin-bottom: 100px;
+  box-shadow: 0 7px 16px -2px rgba(0,0,0,.3);
+  background-color: #f5f5f5;
+  padding: 12px 40px;
+  text-align: center;
+  border-radius: 10px 10px 10px 10px;
+}
+.summary {
+  display: block;
+  width: 75%;
+  height: 750px;
+  margin: 250px auto;
+  box-shadow: 0 7px 16px -2px rgba(0,0,0,.3);
+  background-color: #b6d6c9;
+  border-radius: 15px 15px 15px 15px;
+}
+
+/* styling for containers in home */
+.contain1 {
+  display: block;
+  width: 65%;
+  height: 250px;
+  margin-top: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 7px 16px -2px rgba(0,0,0,.3);
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../img/flyh.jpg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  padding: 60px 110px;
+  border-radius: 15px 15px 15px 15px;
+  /* filter: brightness(80%); */
+
+  opacity: 0.9;
+  text-align: left;
+
+}
+.contain2 {
+  display: block;
+  width: 65%;
+  height: 250px;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 7px 16px -2px rgba(0,0,0,.3);
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../img/loth.jpg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  text-align: center;
+  padding: 60px 110px;
+  border-radius: 15px 15px 15px 15px;
+  /* filter: brightness(80%); */
+  text-align: left;
+}
+.contain3 {
+  display: block;
+  width: 65%;
+  height: 250px;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 100px;
+  box-shadow: 0 7px 16px -2px rgba(0,0,0,.3);
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../img/abouth.jpg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  text-align: center;
+  padding: 60px 110px;
+  border-radius: 15px 15px 15px 15px;
+  /* filter: brightness(80%); */
+  text-align: left;
+}
+.homeH {
+  font-family: sans-serif;
+  font-size: 2.5em;
+  text-align: left;
+  font-weight: 500;
+  color: white;
+}
+.homeP {
+  font-family: sans-serif;
+  font-size: 1.5em;
+  font-weight: 100;
+  color: white;
+
+}
+
+/* dont know if i need this */
+.overlay {
+  display: block;
+  width: 87%;
+  height: 1200px;
+  margin: 70px auto;
+  box-shadow: 0 7px 16px -2px rgba(0,0,0,.3);
+  background: white;
+  padding: 12px 40px;
+  text-align: center;
+}
+
+
+/* buttons/ linked "button"  */
+
+ /* home page */
+.containerButton {
+  color: white;
+  border: none;
+  background-color: #2b4251;
+  text-align: center;
+  cursor: pointer;
+  padding: 12px 25px;
+  width: 10em;
+  height: 4em;
+  font-family: sans-serif;
+  font-size: .8em;
+  text-transform: uppercase;
+  border-radius: 15px 15px 15px 15px;
+
+}
+/* amount of tickets */
+.quantity {
+  background-color: white;
+  font-size: 1rem;
+  font-weight: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 400px;
+  height: 50px;
+  margin: 5px 0px;
+  padding: 0px 24px;
+  color: #37474f;
+}
+/* containers for ticket purchase */
+.left {
+  float: left;
+  width: 50%;
+}
+.right {
+  float: right;
+  width: 50%;
+}
+.tickets {
+  margin: 12px auto;
+}
+.select {
+  margin: 12px auto;
+  color: white;
+  background-color: transparent;
+}
+.total {
+  margin-top: 222.389px;
+  margin-right: 50px;
+  float: right;
+}
+
+/* parking ticket selection */
+.topP {
+ width: 75%;
+ height: 150px;
+ margin: 12px auto;
+}
+.botP {
+ width: 75%;
+ height: 150px;
+ margin: 12px auto;
+}
+.parkP {
+  font-family: sans-serif;
+  font-size: 1em;
+  font-weight: 100;
+  color: #2b4251;
+  width: 60%;
+}
+
+.buttonP {
+  margin: 30px auto 0 auto;
+  width: 170px; height: 50px;
+  background: #37474f;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 17px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+
+}
+
+                /*
+                  css unused for parking selection
+                  .select:after {
+                  font: 17px "Consolas", monospace;
+                  right: 11px;
+                  top: 18px;
+                  position: absolute;
+                }
+                .select select {
+                  -webkit-appearance: none;
+                  -moz-appearance: none;
+                  appearance: none;
+                  display: block;
+                  max-width: 400px;
+                  height: 50px;
+                  margin: 5px 0px;
+                  padding: 0px 24px;
+                  font-size: 16px;
+                  line-height: 1.75;
+                  color: white;
+                  background-color: #37474f;
+                } */
+
+
+/* styling for profile */
+.wrapper {
+  display: table-cell;
+  vertical-align: top;
+}
+.constructor {
+  position: relative;
+  margin: 0;
+  padding: 0 50px;
+}
+.headline {
+  font-size: 1.5em;
+  font-weight: 1em;
+  color: #00008b;
+  font-family: sans-serif;
+  text-transform: uppercase;
+}
+.subhead {
+  font-size: 1em;
+  font-weight: 1em;
+  color: #00008b;
+  font-family: sans-serif;
+}
+.orderH {
+  width: 75%;
+  height: 60%;
+  background-color: white;
+  margin: 0 auto;
+  align-content: center;
+  text-align: center;
+}
+/* cart styling */
+.shoppingCart {
+  display: block;
+  width: 75%;
+  height: 490px;
+  margin: 250px auto;
+  margin-bottom: 100px;
+  box-shadow: 0 7px 16px -2px rgba(0,0,0,.3);
+  background-color: #b6d6c9;
+  border-radius: 15px 15px 15px 15px;
+  padding: 25px 40px;
+  text-align: center;
+  font-family: sans-serif;
+  color: #37474f;
+
+}
+table, td, tr, th{
+  border: 1px solid black;
+}
+
+/* cc validator */
+input, .cc{
+  display: inline-block;
+}
+label .cc{
+  display: block;
+}
+label .ccT {
+  display: inline-block;
+  vertical-align: bottom;
+}
+.flex-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    background-color:#b6d6c9;
+    margin: 150px 175px;
+  
+  box-shadow: 0 7px 16px -2px rgba(0,0,0,.3);
+  background-color: #b6d6c9;
+  border-radius: 15px 15px 15px 15px;
+
+}
+.flex-container > .box {
+    background-color: #C5D7BD;
+    width: 300px;
+    margin: 20px;
+    text-align: center;
+    /* line-height: 75px; */
+    font-size: 20px;
+}
+.headers {
+  display:block;
+    text-align: center;
+    font-size:28px;
+}
+
+.words{
+  display:block;
+  font-size:25px;
+}
+
+

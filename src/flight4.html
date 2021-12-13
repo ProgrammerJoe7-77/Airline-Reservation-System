@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+    <head>
+        <title>
+            GSU Airways - ATL - LON
+        </title>
+        <link rel="stylesheet" href="../css/style.css">
+    </head>
+      <body class="flightB">
+        <header>
+            <h1 class="logo"><a href="">GSU Airways</a></h1>
+            <h1 class="cart">
+                <a href="./cart.php">
+                    <ion-icon name="basket"></ion-icon>
+                </a>
+            </h1>
+            <nav>
+                <ul>
+                  <li class=""><a href="./profile.php">Profile</a></li>
+                  <li class=""><a href="./index.html">Home</a></li>
+                  <li class="active"><a href="flights.html"><b>Flights</b></a></li>
+                  <li><a href="./both.php">Logout</a></li>
+                  </ul>
+            </nav>
+        </header>
+        <div class="flights">
+          <br>
+          <br>
+          <center>
+            <u><h1>FLIGHT INFORMATION:</h1></u>
+            <h3>One Way Trip | Non-stop</h3>
+            <img alt="ATL - BTR" src="../img/4.jpg">
+            <h3>Total Flight Time: <u>~8 Hours</u><h3>
+            <h3>DEPARTURE: Hartsfield-Jackson Atlanta International Airport, Atlanta, Georgia on <u>December 26, 2021 @ 15:00 EST</u></h3>
+            <h3>ARRIVAL: Heathrow Airport, Longford, United Kingdom on <u>December 26, 2021 @ 23:00 EST</u></h3>
+            <h2 id="priceGenerator"></h2>
+            <br>
+            <b><a href="seatings4.html" class="styleButton">CHOOSE YOUR SEAT</a></b>
+          </center>
+          <br>
+          <br>
+          <script>
+            getNumber(700,900);
+
+            function getNumber(min, max) {
+              min = Math.ceil(min);
+              max = Math.floor(max);
+              number = Math.floor(Math.random() * (max - min + 1) + min);
+              document.getElementById("priceGenerator").innerHTML = "PRICE: ~$" + number;
+            }
+
+            localStorage.setItem("price", number);
+          </script>
+          <script src = "https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+        </div>
+    </body>
+</html>
